@@ -6,7 +6,7 @@ export default function Sidebar() {
   return (
     <div className='flex flex-row'>
       {/* <body className="flex items-center justify-center w-screen h-screen p-10 space-x-6 bg-gray-300"> */}
-      <div className={`bg-gray-light w-16 h-screen ${toggle?"block":"hidden"}`} >
+      <div className={`bg-gray-light w-16 h-screen ${toggle?"translate-x-0":"-translate-x-full"}  transition-transform duration-700 ease-linear`} >
 
 {/* <!-- Component Start --> */}
 <div className="flex flex-col items-center w-16 h-full overflow-hidden text-gray-400 bg-gray-900 rounded ">
@@ -68,7 +68,7 @@ export default function Sidebar() {
 
 
 {/* ----------------------------Sidebar---------------------- */}
-<div className={`flex flex-col items-center w-40 overflow-hidden h-screen text-gray-400 bg-gray-900 rounded ${toggle?"hidden":"block"}`}
+<div className={`flex flex-col items-center w-40 overflow-hidden h-screen text-gray-400 bg-gray-900 rounded ${toggle?"-translate-x-64":"-translate-x-16"} transition-transform duration-700 ease-linear`}
 
 >
 		<a className="flex items-center w-full px-3 mt-3" 
